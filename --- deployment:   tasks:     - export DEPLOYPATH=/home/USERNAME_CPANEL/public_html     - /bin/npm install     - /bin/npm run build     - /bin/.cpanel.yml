@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/USERNAME_CPANEL/public_html
+    - /bin/npm install
+    - /bin/npm run build
+    - /bin/rsync -a --delete dist/ $DEPLOYPATH
