@@ -1,0 +1,6 @@
+{
+  "name": "MOMSARASA - Western Snack & Potato Specialties",
+  "description": "Platform pemesanan resmi MOMSARASA spesialis Western Snack, Fish & Chips, Potato Wedges, dan kentang olahan premium dengan layanan pesan antar WhatsApp, GrabFood, dan GoFood.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
