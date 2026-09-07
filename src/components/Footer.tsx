@@ -1,6 +1,7 @@
 import React from 'react';
-import { UtensilsCrossed, MessageCircle, MapPin, Clock, ExternalLink, ShieldCheck, Heart } from 'lucide-react';
+import { UtensilsCrossed, MessageCircle, MapPin, Clock, ExternalLink, ShieldCheck, Heart, Lock } from 'lucide-react';
 import { useStore } from '../context/StoreContext';
+import { navigateTo } from '../utils/navigation';
 
 export const Footer: React.FC = () => {
   const { settings } = useStore();
@@ -137,6 +138,16 @@ export const Footer: React.FC = () => {
                 <a href="#lokasi" className="hover:text-white transition-colors">
                   Petunjuk Arah & Lokasi
                 </a>
+              </li>
+              <li className="pt-2 border-t border-stone-800/80">
+                <button
+                  id="btn-footer-admin-link"
+                  onClick={() => navigateTo('/dashboard')}
+                  className="hover:text-amber-400 transition-colors flex items-center gap-1.5 text-stone-400 text-xs font-semibold hover:underline"
+                >
+                  <Lock className="w-3 h-3 text-stone-500" />
+                  <span>Admin Dashboard</span>
+                </button>
               </li>
             </ul>
           </div>
